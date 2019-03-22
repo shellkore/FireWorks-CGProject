@@ -181,12 +181,12 @@ void initGraphics(int argc, char *argv[])
     glutInitWindowSize(800, 600);
     glutInitWindowPosition(100, 100);
     glutInitDisplayMode(GLUT_DOUBLE);
-    glutCreateWindow("Glory Kim -Fireworks  ");
+    glutCreateWindow("FireWorks -by Shubham and Shailesh ");
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
     glutReshapeFunc(reshape);
     glutIdleFunc(animate);
-    
+   /* 
     auto gravity_planet_submenu = glutCreateMenu(change_gravity);
     glutAddMenuEntry("No Gravity", 0);
     glutAddMenuEntry("The moon", 1);
@@ -228,17 +228,16 @@ void initGraphics(int argc, char *argv[])
     glutAddSubMenu("Lifetime of Particles", particle_life_submenu);
     glutAddSubMenu("Rendering Style Type", rendering_style_type_submenu);
     glutAttachMenu(GLUT_RIGHT_BUTTON);
+    */
 }
-
 // Main
 int main(int argc, char *argv[])
 {
-    printf("Hello, Enjoy the show!\n");
+   //printf("Hello, Enjoy the show!\n");
     printf("Left Mouse Click: Stop Animation\n");
     printf("Spacebar: Start Animation\n");
-    printf("Right Mouse Click: Menu Options\n");
     printf("Press 'esc' to exit the program\n");
-    printf("\nSet up a grand finale by selecting the following:\n     Gravity: Earth\n     Number of Spheres: Grand Finale\n     Number of Particles: Normal\n     Lifetime of Spheres/Particles: Normal\n     Rendering Style Type: Trails\n\nHave fun! ^.^\n");
+   // printf("\nSet up a grand finale by selecting the following:\n     Gravity: Earth\n     Number of Spheres: Grand Finale\n     Number of Particles: Normal\n     Lifetime of Spheres/Particles: Normal\n     Rendering Style Type: Trails\n\nHave fun! ^.^\n");
     
     srand(time(NULL));
     initGraphics(argc, argv);
