@@ -1,15 +1,6 @@
-//
-//  classes.h
-//  CMSC405Final
-//
-//  Created by Glory Kim on 12/16/16.
-//  Copyright © 2016 Glory Kim. All rights reserved.
-//
-
 #ifndef classes_h
 #define classes_h
 
-//#include <GLUT/glut.h>
 #include <GL/glut.h>
 #include <iostream>
 #include <stdio.h>

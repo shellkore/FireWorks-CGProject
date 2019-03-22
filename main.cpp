@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  CMSC 405 Final
-//
-//  Created by Glory Kim on 12/16/16.
-//  Copyright © 2016 Glory Kim. All rights reserved.
-//
-
 #include "classes.h"
 #define RENDERING_TRAIL 1
 
@@ -186,49 +178,7 @@ void initGraphics(int argc, char *argv[])
     glutKeyboardFunc(keyboard);
     glutReshapeFunc(reshape);
     glutIdleFunc(animate);
-   /* 
-    auto gravity_planet_submenu = glutCreateMenu(change_gravity);
-    glutAddMenuEntry("No Gravity", 0);
-    glutAddMenuEntry("The moon", 1);
-    glutAddMenuEntry("Earth", 2);
-    glutAddMenuEntry("Jupiter", 3);
-    glutAddMenuEntry("The Sun", 7);
-    auto number_of_spheres_submenu = glutCreateMenu(change_number_of_spheres);
-    glutAddMenuEntry("Fewest", 1);
-    glutAddMenuEntry("Fewer", 2);
-    glutAddMenuEntry("Normal", 3);
-    glutAddMenuEntry("More", 10);
-    glutAddMenuEntry("Grand Finale", 25);
-    auto number_of_particles_submenu = glutCreateMenu(change_number_of_particles);
-    glutAddMenuEntry("Fewest", 50);
-    glutAddMenuEntry("Fewer", 100);
-    glutAddMenuEntry("Normal", 150);
-    glutAddMenuEntry("More", 200);
-    glutAddMenuEntry("WOW", 500);
-    auto sphere_life_submenu = glutCreateMenu(change_sphere_life);
-    glutAddMenuEntry("Shortest", 50);
-    glutAddMenuEntry("Shorter", 100);
-    glutAddMenuEntry("Normal", 150);
-    glutAddMenuEntry("Longer", 200);
-    glutAddMenuEntry("Longest", 250);
-    auto particle_life_submenu = glutCreateMenu(change_particle_life);
-    glutAddMenuEntry("Shortest", 50);
-    glutAddMenuEntry("Shorter", 100);
-    glutAddMenuEntry("Normal", 150);
-    glutAddMenuEntry("Longer", 200);
-    glutAddMenuEntry("Longest", 250);
-    auto rendering_style_type_submenu = glutCreateMenu(change_rendering_style_type);
-    glutAddMenuEntry("No Trails", 0);
-    glutAddMenuEntry("Trails", 1);
-    auto main_menu = glutCreateMenu(NULL);
-    glutAddSubMenu("Gravity", gravity_planet_submenu);
-    glutAddSubMenu("Number of Spheres", number_of_spheres_submenu);
-    glutAddSubMenu("Number of Particles", number_of_particles_submenu);
-    glutAddSubMenu("Lifetime of Spheres", sphere_life_submenu);
-    glutAddSubMenu("Lifetime of Particles", particle_life_submenu);
-    glutAddSubMenu("Rendering Style Type", rendering_style_type_submenu);
-    glutAttachMenu(GLUT_RIGHT_BUTTON);
-    */
+
 }
 // Main
 int main(int argc, char *argv[])

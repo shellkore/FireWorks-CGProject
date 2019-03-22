@@ -1,11 +1,3 @@
-//
-//  math.cpp
-//  CMSC 405 Final
-//
-//  Created by Glory Kim on 12/16/16.
-//  Copyright © 2016 Glory Kim. All rights reserved.
-//
-
 #include <stdio.h>
 
 #include "classes.h"
