@@ -1,5 +1,11 @@
 # FireWorks-CGProject
 
+## CLONE 
+
+clone `modify` branch
+
+`git clone -b modify https://github.com/shellkore/FireWorks-CGProject.git`
+
 ## TO RUN
 
 ### COMPILE
