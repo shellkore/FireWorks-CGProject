@@ -1,17 +1,9 @@
-//
-//  main.cpp
-//  CMSC 405 Final
-//
-//  Created by Glory Kim on 12/16/16.
-//  Copyright © 2016 Glory Kim. All rights reserved.
-//
-
 #include "classes.h"
 #define RENDERING_TRAIL 1
 
 list<Particle *> particles;
 int frames;
-
+//ISoundEngine *SoundEngine = createIrrKlangDevice();
 //smaller than one?
 list<Sphere *> spheres;
 float SPHERES_PER_FRAME;
@@ -33,7 +25,7 @@ void initData(void) {
 }
 
 void animate(void)
-{
+{   
     frames++;
     if(SPHERES_PER_FRAME > myRandom())
         spheres.push_back(new Sphere());
@@ -67,7 +59,8 @@ void animate(void)
 
 void display()
 {
- 
+
+    //PlaySound("starwars.wav", NULL, SND_ASYNC|SND_FILENAME|SND_LOOP);
     glLoadIdentity();
     gluLookAt(0.0, 100.0, 1000.0, 0.0, 500.0, 0.0, 0.0, 1.0, 0.0);
     
@@ -175,13 +168,14 @@ void change_rendering_style_type(int value) {
 
 //Graphics and Menu
 void initGraphics(int argc, char *argv[])
-{
+{   
+
     initData();
     glutInit(&argc, argv);
     glutInitWindowSize(800, 600);
     glutInitWindowPosition(100, 100);
     glutInitDisplayMode(GLUT_DOUBLE);
-    glutCreateWindow("Glory Kim -Fireworks  ");
+    glutCreateWindow("Fireworks -by Shubham and Shellkore ");
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
     glutReshapeFunc(reshape);
@@ -233,12 +227,13 @@ void initGraphics(int argc, char *argv[])
 // Main
 int main(int argc, char *argv[])
 {
-    printf("Hello, Enjoy the show!\n");
+   // printf("Hello, Enjoy the show!\n");
     printf("Left Mouse Click: Stop Animation\n");
     printf("Spacebar: Start Animation\n");
     printf("Right Mouse Click: Menu Options\n");
     printf("Press 'esc' to exit the program\n");
-    printf("\nSet up a grand finale by selecting the following:\n     Gravity: Earth\n     Number of Spheres: Grand Finale\n     Number of Particles: Normal\n     Lifetime of Spheres/Particles: Normal\n     Rendering Style Type: Trails\n\nHave fun! ^.^\n");
+   // system("paplay xylofon.wav");
+    //printf("\nSet up a grand finale by selecting the following:\n     Gravity: Earth\n     Number of Spheres: Grand Finale\n     Number of Particles: Normal\n     Lifetime of Spheres/Particles: Normal\n     Rendering Style Type: Trails\n\nHave fun! ^.^\n");
     
     srand(time(NULL));
     initGraphics(argc, argv);
