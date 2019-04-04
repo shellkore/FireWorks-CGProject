@@ -232,7 +232,7 @@ int main(int argc, char *argv[])
     printf("Spacebar: Start Animation\n");
     printf("Right Mouse Click: Menu Options\n");
     printf("Press 'esc' to exit the program\n");
-   // system("paplay xylofon.wav");
+   system("paplay music.wav");
     //printf("\nSet up a grand finale by selecting the following:\n     Gravity: Earth\n     Number of Spheres: Grand Finale\n     Number of Particles: Normal\n     Lifetime of Spheres/Particles: Normal\n     Rendering Style Type: Trails\n\nHave fun! ^.^\n");
     
     srand(time(NULL));
